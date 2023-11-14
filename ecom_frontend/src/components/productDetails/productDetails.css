@@ -1,0 +1,175 @@
+.product-detail {
+    width: 75%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+
+}
+
+.product-image {
+    display: flex;
+    gap: 1%;
+}
+
+.allimages {
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    gap: 2%;
+}
+
+.allimages img {
+    height: auto;
+    width: 90px;
+    justify-content: space-around;
+}
+
+.active-image img {
+    height: 600px;
+    width: auto;
+
+}
+
+.product-desc {
+    display: flex;
+    flex-direction: column;
+
+    gap: 2%;
+    width: 50%;
+    /* align-items; */
+    font-size: 1rem;
+    color: black;
+
+}
+
+
+
+.product-desc button {
+    font-size: 0.8rem;
+    /* padding: 1%; */
+    height: fit-content;
+    width: fit-content;
+    color: white;
+
+}
+
+#demo-simple-select {
+    padding: 8%;
+}
+
+
+.item-description {
+    font-size: 0.8rem;
+    color: grey;
+    font-size: 1.5rem;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.size-selector {
+    width: 15%;
+}
+
+.item {
+    width: fit-content;
+    display: flex;
+    gap: 3%;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+}
+
+@media screen and (max-width: 1485px) {
+    .active-image img {
+        height: 400px;
+        width: auto;
+    }
+}
+
+
+
+@media screen and (max-width: 1090px) {
+    .product-detail {
+        margin: 0.2% 0 0 2%;
+        flex-direction: column;
+        width: 100vw;
+        margin: 0;
+    }
+
+    .product-image {
+        flex-direction: column-reverse;
+
+    }
+
+    .allimages {
+        flex-direction: row;
+
+        margin: auto;
+        justify-content: space-evenly;
+    }
+
+    .allimages img {
+        width: 35px;
+        height: auto;
+        justify-content: space-evenly;
+    }
+
+    .active-image {
+        justify-content: baseline;
+
+        margin: auto;
+        text-align: center;
+    }
+
+    .active-image img {
+        height: 300px;
+        width: auto;
+    }
+
+    .product-desc {
+        width: 80%;
+        margin: auto;
+
+
+    }
+
+    .product-desc p {
+        font-size: 0.8rem;
+        line-height: 2;
+    }
+
+    .product-desc h3 {
+        /* font-size: 1rem; */
+    }
+
+    .size-selector {
+        margin: 4% 0;
+    }
+
+    .item {
+        margin-bottom: 4%;
+    }
+
+    .product-desc button {
+        font-size: 0.5rem;
+    }
+
+    #demo-simple-select {
+        padding: 5%;
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 500px) {
+    .size-selector {
+        width: 25%;
+    }
+
+}
